@@ -1,4 +1,3 @@
-
 PFont aileron;
 
 void setup() {
@@ -12,10 +11,9 @@ void draw() {
   //background(0);
 
   if (frameCount%2==0) {
-
     float x = random(width);
     float y = random(height);
-
+    
     fill(0,100);
     text(frameCount, x+5, y+5);
 
