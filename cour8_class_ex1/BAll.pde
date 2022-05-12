@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////
 class Ball{
-  float x;
-  float y;
+  float x=100;
+  float y=100;
   float vx=random(-1,1);
   float vy=random(-1,1);
   color col=color(random(255),random(255),random(255));
@@ -12,9 +12,11 @@ class Ball{
     y=_y;
     t=_t;
   }
+
   void aff(){
     fill(col);
     noStroke();
+    if(frameCount%60==0)
     rect(x,y,t,t);
     x+=vx;
     y+=vy;
