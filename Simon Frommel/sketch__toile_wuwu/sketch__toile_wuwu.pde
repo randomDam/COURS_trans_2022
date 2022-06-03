@@ -64,10 +64,10 @@ void draw() {
 
   layer1.fill(141, 13, 188);
   layer1.noStroke();
-  layer1.text(titre[index], 60, 100);
+  layer1.text(titre[index], pWidth(5), pHeight(10));
 
   layer1.fill(185, 120, 230);
-  layer1.text(soustitre[index2], 60, 200);
+  layer1.text(soustitre[index2], pWidth(5), pHeight(20));
   layer1.endDraw();
 
   /*pushMatrix();
